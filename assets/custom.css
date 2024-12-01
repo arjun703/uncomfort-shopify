@@ -49,6 +49,10 @@
 
 @media (min-width: 990px) {
 
+  .desktop-gender-switcher-and-talk-btn{
+    display:flex;
+    justify-content:center;
+  }
 
   .button-secondary-custom{
     background: #E4E4E4!important;
