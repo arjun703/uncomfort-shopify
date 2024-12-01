@@ -10,6 +10,7 @@
 .template-index sticky-header{
   position:absolute;
   width: 100%
+  background:transparent;
 }
 
 
