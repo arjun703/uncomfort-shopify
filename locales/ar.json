@@ -1780,5 +1780,32 @@
       "let_us_know": "أخبرنا",
       "contact_us": "اتصل بنا."
     }
+  },
+  "gift_cards": {
+    "issued": {
+      "add_to_apple_wallet": "أضف إلى Apple Wallet",
+      "qr_image_alt": "رمز الاستجابة السريعة - امسح ضوئيًا لاسترداد بطاقة الهدايا",
+      "copy_code": "نسخ رمز بطاقة الهدية",
+      "expiration_date": "تنتهي صلاحيتها {{ expires_on }}",
+      "copy_code_success": "تم نسخ الكود بنجاح",
+      "expired": "منتهي الصلاحية"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "أريد أن أرسل هذا كهدية",
+      "expanded": "نموذج مستلم بطاقة الهدايا الموسع",
+      "collapsed": "نموذج متلقي بطاقة الهدية تم طيه",
+      "email_label": "بريد إلكتروني للمستلم",
+      "email_label_optional_for_no_js_behavior": "البريد الإلكتروني للمستلم (اختياري)",
+      "email": "بريد إلكتروني",
+      "name_label": "اسم المستلم (اختياري)",
+      "name": "اسم",
+      "message_label": "الرسالة (اختياري)",
+      "message": "رسالة",
+      "max_characters": "{{ max_chars }} حرف كحد أقصى",
+      "send_on": "س س س س-ش-ي",
+      "send_on_label": "أرسل على (اختياري)"
+    }
   }
 }
