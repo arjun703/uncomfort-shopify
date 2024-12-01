@@ -55,7 +55,6 @@
 
   .video-banner .heading-wrapper{
     font-size: 70px;
-    font-weight: 600;
     line-height: 82.95px;
   }
   .video-banner .button-wrapper button{
@@ -64,6 +63,7 @@
     height: 50px;    
     font-family: Rubik;
     font-size: 16px;
+    font-weight: 500;
     line-height: 18.96px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
