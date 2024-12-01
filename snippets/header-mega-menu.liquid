@@ -5,11 +5,12 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
+<div>
+    {% render 'header-search', input_id: 'Search-In-Modal' %}
+
 <nav class="header__inline-menu">
 
-  <summary>
-    {% render 'header-search', input_id: 'Search-In-Modal' %}
-  </summary>
+
 
   <ul class="list-menu list-menu--inline" role="list">
 
@@ -98,3 +99,4 @@
     {%- endfor -%}
   </ul>
 </nav>
+</div>
