@@ -136,6 +136,27 @@
             </ul>
           </nav>
           <div class="menu-drawer__utility-links">
+
+            <div class="desktop-gender-switcher-and-talk-btn d-none d-md-flex">
+              <button class="custom-button gender-switch-button button-secondary-custom">
+                <span class="gender-content gender-men-content">
+                  <span class="gender-text gender-text-men">Men</span>
+                  <span class="gender-icon-wrapper men-wrapper">{{ 'icon-men.svg' | inline_asset_content }}</span>
+                </span>
+                <span class="gender-content gender-women-content">
+                  <span class="gender-text gender-text-women">Women</span>
+                  <span class="gender-icon-wrapper women-wrapper">{{ 'icon-men.svg' | inline_asset_content }}</span>
+                </span>
+              </button>
+              <script>
+                document.querySelector('.gender-switch-button').addEventListener('click', (e)=> {
+                  e.target.closest('button').classList.toggle('gender-women-content-active')
+                })
+              </script>
+              <button class="custom-button button-primary-custom take-qui-btn">Take the Quiz</button>          
+            </div>
+
+            
             {%- if shop.customer_accounts_enabled -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
