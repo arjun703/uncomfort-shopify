@@ -173,6 +173,6 @@ header{
       display:block;
     }
     .header__icons .header__search{
-      display:none
+      display:none!important;
     }
   }
