@@ -1,4 +1,87 @@
+/* Home Page */
+
+/* Header */
+
 .video-banner video{
     width: 100%;
     height: auto;
 }
+
+
+
+/* common to all */
+
+  .g-42{
+      gap: 42px;
+    }
+  
+  .g-80{
+    gap: 80px;
+  }
+
+  .bottom-0{
+    bottom: 0px;
+  }
+
+  .right-0{
+    right:0px
+  }
+  
+  .position-relative{
+    position:relative;
+  }
+
+  .position-absolute{
+    position:absolute;
+  }
+  
+  .d-grid {
+    display: grid;
+    width: 100%
+  }
+  
+  .col-sm-2{
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default (mobile) */
+  }
+
+  .col-sm{
+    grid-template-columns: repeat(1, 1fr); /* 2 columns by default (mobile) */
+  }
+
+  .g-3{
+    gap: 3px;
+  }
+
+  .all-unset{
+    all:unset!important;
+  }
+  
+  @media (min-width: 990px) {
+    .col-md-4 {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens and up */
+    }
+    .col-md-3{
+      grid-template-columns: repeat(3, 1fr); /* 4 columns for medium screens and up */
+    }
+
+    
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --page-width: 94%!important;
+    }
+  }
+
+
+  @media (min-width: 1280px) {
+    :root {
+      --page-width: 94%!important;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    :root {
+      --page-width: 1344px!important;
+    }
+  }
