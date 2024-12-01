@@ -100,8 +100,7 @@
   }
 
 .mobile-gender-switcher-and-talk-btn{
-  display:flex;
-  gap: 8px;
+  display:block;
 }
 
 @media (min-width: 990px) {
