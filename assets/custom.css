@@ -39,9 +39,22 @@
   width:100%;
 }
 
+.gender-icon-wrappe{
+  display:flex;
+  width: 33px;
+  height: 33px;
+  background:white;
+  border-radius: 50%;
+  justify-content:center;
+  align-items:center;
+}
 
 @media (min-width: 990px) {
 
+.header__icons{
+  align-items:center;
+}
+  
 .custom-search-and-main-menu-wrapper{
   display:flex;
   align-items:center;
@@ -183,3 +196,8 @@ header{
       display:none!important;
     }
   }
+
+.custom-button {
+  border:none;
+  background:none;
+}
