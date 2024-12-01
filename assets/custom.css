@@ -24,6 +24,12 @@
 
 @media (min-width: 990px) {
 
+
+header{
+    display: flex;
+    justify-content: space-between;  
+}
+  
 .template-index .header-wrapper{
   position:absolute;
   width: 100%;
