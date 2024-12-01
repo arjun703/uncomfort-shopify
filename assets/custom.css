@@ -36,6 +36,10 @@
 
 @media (min-width: 990px) {
 
+.custom-search-and-main-menu-wrapper{
+  display:flex;
+  align-items:center;
+}
 
 header{
     display: flex!important;
@@ -138,7 +142,9 @@ header{
     display: grid;
     width: 100%
   }
-  
+  .d-none{
+    display:none;
+  }
   .col-sm-2{
     grid-template-columns: repeat(2, 1fr); /* 2 columns by default (mobile) */
   }
@@ -161,5 +167,9 @@ header{
     }
     .col-md-3{
       grid-template-columns: repeat(3, 1fr); /* 4 columns for medium screens and up */
+    }
+
+    .d-md-block{
+      display:block;
     }
   }
