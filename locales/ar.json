@@ -1807,5 +1807,151 @@
       "send_on": "س س س س-ش-ي",
       "send_on_label": "أرسل على (اختياري)"
     }
+  },
+  "sections": {
+    "quick_order_list": {
+      "view_cart": "عرض عربة التسوق",
+      "each": "{{ money }} /كل",
+      "product": "منتج",
+      "variant": "متغير",
+      "variant_total": "المجموع المتغير",
+      "items_added": {
+        "one": "تمت إضافة {{ quantity }} عنصر",
+        "other": "تمت إضافة {{ quantity }} عنصرًا"
+      },
+      "items_removed": {
+        "one": "تمت إزالة العنصر {{ quantity }}",
+        "other": "تمت إزالة {{ quantity }} من العناصر"
+      },
+      "product_variants": "متغيرات المنتج",
+      "total_items": "مجموع العناصر",
+      "remove_all_single_item_confirmation": "إزالة 1 عنصر من سلة التسوق الخاصة بك؟",
+      "remove_all_items_confirmation": "هل تريد إزالة جميع {{ quantity }} من سلة التسوق الخاصة بك؟",
+      "remove_all": "إزالة الكل",
+      "cancel": "يلغي",
+      "min_error": "هذا العنصر له حد أدنى من {{ min }}",
+      "max_error": "هذا العنصر له حد أقصى قدره {{ max }}",
+      "step_error": "لا يمكنك إضافة هذا العنصر إلا بزيادات مقدارها {{ step }}"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "ادخل إلى المتجر باستخدام كلمة المرور:",
+      "login_password_button": "ادخل باستخدام كلمة المرور",
+      "login_form_password_label": "كلمة المرور",
+      "login_form_password_placeholder": "كلمة المرور الخاصة بك",
+      "login_form_error": "كلمة المرور خاطئة!",
+      "login_form_submit": "يدخل",
+      "admin_link_html": "هل أنت صاحب المتجر؟ <a href=\"/admin\" class=\"link underlined-link\">سجل دخولك هنا</a>",
+      "powered_by_shopify_html": "سيتم تشغيل هذا المتجر بواسطة {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "شارك على الفيسبوك",
+        "share_on_twitter": "شارك على X",
+        "share_on_pinterest": "ثبت على بينتريست"
+      },
+      "links": {
+        "twitter": "إكس (تويتر)",
+        "facebook": "فيسبوك",
+        "pinterest": "بينتريست",
+        "instagram": "انستجرام",
+        "tumblr": "تمبلر",
+        "snapchat": "سناب شات",
+        "youtube": "يوتيوب",
+        "vimeo": "فيميو",
+        "tiktok": "تيك توك"
+      }
+    },
+    "continue_shopping": "متابعة التسوق",
+    "pagination": {
+      "label": "الترقيم الصفحي",
+      "page": "الصفحة {{ number }}",
+      "next": "الصفحة التالية",
+      "previous": "الصفحة السابقة"
+    },
+    "search": {
+      "reset": "مسح مصطلح البحث"
+    },
+    "cart": {
+      "view": "عرض عربة التسوق ( {{ count }} )",
+      "view_empty_cart": "عرض عربة التسوق",
+      "item_added": "تمت إضافة العنصر إلى سلة التسوق الخاصة بك"
+    },
+    "share": {
+      "close": "إغلاق المشاركة",
+      "copy_to_clipboard": "نسخ الوصلة",
+      "share_url": "وصلة",
+      "success_message": "تم نسخ الرابط إلى الحافظة"
+    },
+    "slider": {
+      "of": "ل",
+      "next_slide": "انزلق إلى اليمين",
+      "previous_slide": "حرك إلى اليسار",
+      "name": "منزلق"
+    }
+  },
+  "newsletter": {
+    "label": "بريد إلكتروني",
+    "success": "شكرا على الاشتراك",
+    "button_label": "يشترك"
+  },
+  "accessibility": {
+    "skip_to_text": "انتقل إلى المحتوى",
+    "skip_to_product_info": "انتقل إلى معلومات المنتج",
+    "close": "يغلق",
+    "unit_price_separator": "لكل",
+    "vendor": "بائع:",
+    "error": "خطأ",
+    "refresh_page": "يؤدي اختيار التحديد إلى تحديث الصفحة بالكامل.",
+    "link_messages": {
+      "new_window": "يفتح في نافذة جديدة.",
+      "external": "يفتح موقع ويب خارجي."
+    },
+    "loading": "تحميل...",
+    "total_reviews": "مجموع المراجعات",
+    "star_reviews_info": "{{ rating_value }} من أصل {{ rating_max }} نجمة",
+    "collapsible_content_title": "محتوى قابل للطي",
+    "complementary_products": "المنتجات التكميلية"
+  },
+  "blogs": {
+    "article": {
+      "read_more_title": "اقرأ المزيد: {{ title }}",
+      "comments": {
+        "one": "{{ count }} تعليق",
+        "other": "{{ count }} تعليقات"
+      },
+      "moderated": "يرجى ملاحظة أن التعليقات تحتاج إلى الموافقة قبل نشرها.",
+      "comment_form_title": "اترك تعليقا",
+      "name": "اسم",
+      "email": "بريد إلكتروني",
+      "message": "تعليق",
+      "post": "انشر تعليقا",
+      "back_to_blog": "العودة إلى المدونة",
+      "share": "شارك هذه المقالة",
+      "success": "لقد تم نشر تعليقك بنجاح! شكرا لك!",
+      "success_moderated": "تم نشر تعليقك بنجاح، وسنقوم بنشره بعد قليل، حيث أن مدونتنا تخضع للرقابة."
+    }
+  },
+  "onboarding": {
+    "product_title": "مثال على عنوان المنتج",
+    "collection_title": "اسم مجموعتك"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "أضف إلى السلة",
+      "choose_options": "اختر الخيارات",
+      "choose_product_options": "اختر الخيارات لـ {{ product_name }}",
+      "description": "وصف",
+      "inventory_in_stock": "في الأوراق المالية",
+      "inventory_in_stock_show_count": "{{ quantity }} في المخزون",
+      "inventory_low_stock": "مخزون منخفض",
+      "inventory_low_stock_show_count": "مخزون منخفض: {{ quantity }} متبقية",
+      "inventory_out_of_stock": "إنتهى من المخزن",
+      "inventory_out_of_stock_continue_selling": "في الأوراق المالية",
+      "sku": "رقم المنتج",
+      "on_sale": "أُوكَازيُون",
+      "product_variants": "متغيرات المنتج"
+    }
   }
 }
