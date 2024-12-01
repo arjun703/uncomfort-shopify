@@ -1,6 +1,42 @@
+<div>
+  <div>
+    <div>
+      {{ section.settings.video | video_tag }}
+    </div>
+    <div>
+      <div>
+        <div>
+          {{ section.settings.heading }}
+        </div>
+        <div>
+          <button class="button button-primary">
+            {{ section.settings.button_label }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
     "name": "Custom Video Banner",
-    "settings": []
+    "settings": [
+      {
+        "type": "video",
+        "label": "Video",
+        "id": "video"
+      },
+      {
+        "type": "text",
+        "label": "Heading",
+        "id": "heading"
+      },
+      {
+        "type": "text",
+        "label": "Button Label",
+        "id": "button_label"
+      }
+    ]
   }
 {% endschema %}
