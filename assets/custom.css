@@ -6,6 +6,11 @@
     display:none;
   }
 
+.gender-content{
+  display:flex;
+  align-items:center;
+}
+
     .header__icons .header__search{
       display:none!important;
     }
