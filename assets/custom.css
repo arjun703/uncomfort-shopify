@@ -9,6 +9,8 @@
 
 .template-index header{
   position:absolute;
+  width: 100%
+  background:white;
 }
 
 
