@@ -36,18 +36,17 @@
   width:100%;
 }
 
-@media screen and (min-width: 990px) {
+
+@media (min-width: 990px) {
+
     .heading-and-button.page-width {
         padding-left: 0px;
         padding-right: 0px;
     }
-  .heading-and-button-wrapper-inner{
-    max-width: 840px;
-  }
-}
-
-
-@media (min-width: 990px) {
+    .heading-and-button-wrapper-inner{
+      max-width: 840px;
+    }
+  
    .text-content-wrapper{
      position:absolute;
      bottom:64px;
