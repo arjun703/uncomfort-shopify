@@ -89,6 +89,8 @@
   .desktop-gender-switcher-and-talk-btn{
     display:flex;
     align-items:stretch;
+    gap: 5px;
+    
   }
 
   .button-secondary-custom{
