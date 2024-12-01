@@ -2,6 +2,10 @@
 
 /* Header */
 
+    .header__icons .header__search{
+      display:none!important;
+    }
+
   .desktop-gender-switcher-and-talk-btn{
     line-height:1;
   }
@@ -206,8 +210,9 @@ header{
     .d-md-block{
       display:block;
     }
-    .header__icons .header__search{
-      display:none!important;
+
+    .d-md-flex{
+      display:flex
     }
   }
   
