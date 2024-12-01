@@ -7,14 +7,14 @@
     height: auto;
 }
 
-.template-index sticky-header{
+.template-index .header-wrapper{
   position:absolute;
   width: 100%;
   top: 20px;
   background:transparent;
 }
 
-.template-index sticky-header header{
+.template-index .header-wrapper header{
   background:white;
   border-radius: 8px;
 }
@@ -40,11 +40,6 @@
     font-weight: 600;
     line-height: 82.95px;
   }
-
-
-
-
-  
 }
 
 /* common to all */
