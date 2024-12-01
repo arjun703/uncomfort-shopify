@@ -11,15 +11,19 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 16.59px;
-    text-align: left;
+    text-align: center;
     width:140px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .gender-switch-button .gender-women-content{
-    display:none;
+    margin-top: -300px;
   }
+
+.gender-switch-button.gender-women-content-active .gender-women-content{
+  
+}
 
 .gender-content{
   display:flex;
