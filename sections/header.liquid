@@ -212,6 +212,11 @@
             <span class="gender-icon-wrapper women-wrapper">{{ 'icon-men.svg' | inline_asset_content }}</span>
           </span>
         </button>
+        <script>
+          document.querySelector('.gender-switch-button').addEventListener('click', (e)=> {
+            e.target.closest('button').classList.toggle('gender-women-content-active')
+          })
+        </script>
         <button class="custom-button button-primary-custom take-qui-btn">Take the Quiz</button>          
       </div>
       
