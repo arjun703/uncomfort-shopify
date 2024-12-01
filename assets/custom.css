@@ -51,7 +51,7 @@
 
 
   .button-secondary-custom{
-    background: #E4E4E4;
+    background: #E4E4E4!important;
     width: 94px;
     height: 45px;
     display:flex;
