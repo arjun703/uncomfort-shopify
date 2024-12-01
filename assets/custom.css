@@ -54,6 +54,7 @@
     background: #E4E4E4!important;
     height: 45px;
     display:flex;
+    align-items:center;
     padding: 10px 6px 10px 16px;
     gap: 10px;
     border-radius: 8px 0px 0px 0px;
