@@ -201,8 +201,11 @@
     {%- endif -%}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
-      <div class="desktop-gender-switcher-and-talk-btn">
-        <button class="button button-secondary gender-switch-button"></button>
+      <div class="desktop-gender-switcher-and-talk-btn d-none d-md-block">
+        <button class="button button-secondary gender-switch-button">
+          <span>Men</span>
+          <span>{% render 'icon-men' %}</span>
+        </button>
         <button class="button button-primary talk-to-expert-button"></button>          
       </div>
       
