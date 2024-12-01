@@ -172,4 +172,7 @@ header{
     .d-md-block{
       display:block;
     }
+    .header__icons .header__search{
+      display:none
+    }
   }
