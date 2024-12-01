@@ -5,15 +5,11 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
+<div>
+            {% render 'header-search', input_id: 'Search-In-Modal' %}
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
-    <li>
-      <header-menu>
-        <summary>
-          {% render 'header-search', input_id: 'Search-In-Modal' %}
-        </summary>
-      </header-menu>
-    </li>
     {%- for link in section.settings.menu.links -%}
       <li>
         {%- if link.links != blank -%}
@@ -108,3 +104,5 @@
     {%- endfor -%}
   </ul>
 </nav>
+
+</div>
