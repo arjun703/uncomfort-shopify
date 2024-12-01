@@ -196,8 +196,8 @@ header{
       display:none!important;
     }
   }
-
-.custom-button {
-  border:none;
-  background:none;
-}
+  
+  .custom-button {
+    border:none;
+    background:none;
+  }
