@@ -22,7 +22,7 @@
   }
 
 .gender-switch-button.gender-women-content-active .gender-women-content{
-  display:block;
+  display:flex;
 }
 
 .gender-switch-button.gender-women-content-active .gender-men-content{
