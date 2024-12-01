@@ -7,6 +7,10 @@
     height: auto;
 }
 
+.template-index header{
+  position:absolute;
+}
+
 
 @media (min-width: 1024px) {
  .text-content-wrapper{
