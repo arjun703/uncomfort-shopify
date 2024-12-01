@@ -80,6 +80,7 @@
   .button-secondary-custom{
     background: #E4E4E4!important;
     height: 45px;
+    padding: 0 16px;
     gap: 10px;
     border-radius: 8px
   }
