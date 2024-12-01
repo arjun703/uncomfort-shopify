@@ -103,6 +103,11 @@
   display:block;
 }
 
+.mobile-gender-switcher-and-talk-btn.gender-switch-button {
+  display:block;
+  margin-bottom:8px;
+}
+
 @media (min-width: 990px) {
 
   .desktop-gender-switcher-and-talk-btn{
