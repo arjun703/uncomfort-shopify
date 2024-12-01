@@ -103,8 +103,8 @@
   display:block;
 }
 
-.mobile-gender-switcher-and-talk-btn.gender-switch-button {
-  display:block;
+.mobile-gender-switcher-and-talk-btn .gender-switch-button {
+  display:block!important;
   margin-bottom:8px;
 }
 
