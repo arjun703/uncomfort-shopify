@@ -52,14 +52,12 @@
 
   .button-secondary-custom{
     background: #E4E4E4;
-    width: Hug (94px)px;
-    height: Fixed (45px)px;
-    top: 33px;
-    left: 1187px;
+    width: 94px;
+    height: 45px;
+    display:flex;
     padding: 10px 6px 10px 16px;
     gap: 10px;
     border-radius: 8px 0px 0px 0px;
-    opacity: 0px;
   }
 
   
