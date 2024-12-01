@@ -23,7 +23,6 @@
   font-family: Rubik;
   text-align: left;
   text-underline-position: from-font;
-  color:#FFFFFF;
   text-decoration-skip-ink: none;
 }
 
@@ -39,6 +38,11 @@
 
 @media (min-width: 990px) {
 
+    .video-banner .heading-wrapper{
+      color:#FFFFFF;
+    }
+
+  
     .heading-and-button.page-width {
         padding-left: 0px;
         padding-right: 0px;
