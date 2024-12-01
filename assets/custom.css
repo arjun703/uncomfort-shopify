@@ -7,17 +7,6 @@
     height: auto;
 }
 
-.template-index .header-wrapper{
-  position:absolute;
-  width: 100%;
-  top: 20px;
-  background:transparent;
-}
-
-.template-index .header-wrapper header{
-  background:white;
-  border-radius: 8px;
-}
 
 .video-banner .heading-wrapper{
   font-family: Rubik;
@@ -38,6 +27,22 @@
 
 @media (min-width: 990px) {
 
+  .template-index .header-wrapper{
+  position:absolute;
+  width: 100%;
+  top: 20px;
+  background:transparent;
+}
+
+.template-index .header-wrapper header{
+  background:white;
+}
+
+
+    .template-index .header-wrapper header{
+      border-radius: 8px;
+    }
+      
     .video-banner .heading-wrapper{
       color:#FFFFFF;
     }
