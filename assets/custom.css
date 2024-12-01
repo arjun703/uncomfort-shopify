@@ -6,7 +6,17 @@
     line-height:1;
   }
 
-
+  .button-secondary-custom{
+    background: #E4E4E4;
+    width: Hug (94px)px;
+    height: Fixed (45px)px;
+    top: 33px;
+    left: 1187px;
+    padding: 10px 6px 10px 16px;
+    gap: 10px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 0px;
+  }
 
 .video-banner video{
     width: 100%;
