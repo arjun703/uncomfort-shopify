@@ -160,7 +160,11 @@ header{
   .all-unset{
     all:unset!important;
   }
-  
+
+  .desktop-gender-switcher-and-talk-btn{
+    line-height:1;
+  }
+
   @media (min-width: 1024px) {
     .col-md-4 {
       grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens and up */
