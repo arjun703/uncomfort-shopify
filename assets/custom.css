@@ -2,6 +2,21 @@
 
 /* Header */
 
+  .take-qui-btn{
+    background:#1B1F23;
+    color:white;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.59px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+
   .gender-switch-button .gender-women-content{
     display:none;
   }
