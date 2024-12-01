@@ -101,6 +101,12 @@
     
   }
 
+  .mobile-gender-switcher-and-talk-btn{
+      display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  
     .header__icons .header__search{
       display:none!important;
     }
