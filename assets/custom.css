@@ -15,7 +15,10 @@
   text-decoration-skip-ink: none;
 }
 
-
+.svg-wrapper>svg {
+    height: unset; 
+    width: unset; 
+}
 
 .text-content-wrapper{
   width:100%;
