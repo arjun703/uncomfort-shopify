@@ -51,7 +51,7 @@
 
   .desktop-gender-switcher-and-talk-btn{
     display:flex;
-    justify-content:center;
+    align-items:center;
   }
 
   .button-secondary-custom{
