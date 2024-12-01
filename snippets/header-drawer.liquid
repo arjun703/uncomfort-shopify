@@ -137,8 +137,8 @@
           </nav>
           <div class="menu-drawer__utility-links">
 
-            <div class="mobile-gender-switcher-and-talk-btn d-block d-md-none">
-              <a class="custom-button gender-switch-button button-secondary-custom">
+            <div class="mobile-gender-switcher-and-talk-btn d-flex d-md-none">
+              <button class="custom-button gender-switch-button button-secondary-custom">
                 <span class="gender-content gender-men-content">
                   <span class="gender-text gender-text-men">Men</span>
                   <span class="gender-icon-wrapper men-wrapper">{{ 'icon-men.svg' | inline_asset_content }}</span>
@@ -147,13 +147,13 @@
                   <span class="gender-text gender-text-women">Women</span>
                   <span class="gender-icon-wrapper women-wrapper">{{ 'icon-men.svg' | inline_asset_content }}</span>
                 </span>
-              </a>
+              </button>
               <script>
                 document.querySelector('.gender-switch-button').addEventListener('click', (e)=> {
                   e.target.closest('button').classList.toggle('gender-women-content-active')
                 })
               </script>
-              <a class="custom-button button-primary-custom take-qui-btn">Take the Quiz</a>          
+              <button class="custom-button button-primary-custom take-qui-btn">Take the Quiz</button>          
             </div>
 
             
