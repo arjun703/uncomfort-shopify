@@ -32,6 +32,9 @@
     margin-top: 40px;
   }
 
+.text-content-wrapper{
+  width:100%;
+}
 
 @media screen and (min-width: 990px) {
     .video-banner .page-width {
