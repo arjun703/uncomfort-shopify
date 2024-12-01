@@ -1,7 +1,7 @@
 <div>
   <div class="video-and-text-block">
     <div class="video-wrapper">
-      {{ section.settings.video | video_tag }}
+      <video src="{{ section.settings.video.sources[0] }}"></video>
     </div>
     <div class="text-content-wrapper">
       <div class="heading-and-button">
