@@ -12,9 +12,9 @@
     font-weight: 500;
     line-height: 16.59px;
     text-align: left;
+    width:140px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
   }
 
   .gender-switch-button .gender-women-content{
