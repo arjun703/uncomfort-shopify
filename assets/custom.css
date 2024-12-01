@@ -62,8 +62,7 @@
     border-radius: 8px;
     padding: 10px;
 
-    --shadow-horizontal-offset: unset;
-    --shadow-vertical-offset: unset;
+    --border-offset: unset;
   }
   
 }
