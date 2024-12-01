@@ -19,11 +19,30 @@
   border-radius: 8px;
 }
 
+.video-banner .heading-wrapper{
+  font-family: Rubik;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+
+
 @media (min-width: 1024px) {
  .text-content-wrapper{
    position:absolute;
    bottom:64px;
  }
+
+  .video-banner .heading-wrapper{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 82.95px;
+  }
+
+
+
+
   
 }
 
