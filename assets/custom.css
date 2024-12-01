@@ -99,6 +99,12 @@
     border-radius: 8px
   }
 
+.mobile-gender-switcher-and-talk-btn{
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+
 @media (min-width: 990px) {
 
   .desktop-gender-switcher-and-talk-btn{
@@ -109,11 +115,6 @@
     
   }
 
-  .mobile-gender-switcher-and-talk-btn{
-    display:flex;
-    flex-direction:column!important;
-    gap:8px;
-  }
   
     .header__icons .header__search{
       display:none!important;
