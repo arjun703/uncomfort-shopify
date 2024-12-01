@@ -27,6 +27,11 @@
   text-decoration-skip-ink: none;
 }
 
+  
+  .video-banner .button-wrapper{
+    margin-top: 40px;
+  }
+
 
 
 @media (min-width: 1024px) {
@@ -40,9 +45,10 @@
     font-weight: 600;
     line-height: 82.95px;
   }
-  
-  .video-banner .button-wrapper{
-    margin-top: 40px;
+  .video-banner .button-wrapper button{
+    background:white;
+    width: 160px;
+    height: 50px
   }
   
 }
