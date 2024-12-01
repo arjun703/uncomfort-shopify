@@ -8,6 +8,13 @@
 }
 
 
+@media (min-width: 1024px) {
+ .text-content-wrapper{
+   position:absolute;
+   bottom:64px;
+ }
+  
+}
 
 /* common to all */
 
