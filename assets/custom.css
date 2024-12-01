@@ -11,6 +11,16 @@
   align-items:center;
 }
 
+.gender-icon-wrapper{
+    width: 33px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: white;
+    border-radius: 50%;
+}
+
     .header__icons .header__search{
       display:none!important;
     }
