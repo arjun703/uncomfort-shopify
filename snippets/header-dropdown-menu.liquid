@@ -5,8 +5,11 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-<div>
-            {% render 'header-search', input_id: 'Search-In-Modal' %}
+<div class="custom-search-and-main-menu-wrapper">
+  <div class="custom-desktop-search-icon">
+                {% render 'header-search', input_id: 'Search-In-Modal' %}
+
+  </div>
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
