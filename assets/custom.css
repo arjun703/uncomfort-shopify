@@ -56,32 +56,11 @@
     all:unset!important;
   }
   
-  @media (min-width: 990px) {
+  @media (min-width: 1024px) {
     .col-md-4 {
       grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens and up */
     }
     .col-md-3{
       grid-template-columns: repeat(3, 1fr); /* 4 columns for medium screens and up */
-    }
-
-    
-  }
-
-  @media (min-width: 768px) {
-    :root {
-      --page-width: 94%!important;
-    }
-  }
-
-
-  @media (min-width: 1280px) {
-    :root {
-      --page-width: 94%!important;
-    }
-  }
-
-  @media (min-width: 1440px) {
-    :root {
-      --page-width: 1344px!important;
     }
   }
