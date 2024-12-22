@@ -1,7 +1,6 @@
 <div class="page-width">
 
 
-
 {% for collection in collections %}
   <h2>{{ collection.title }}</h2>
   <div class="collection-products">
@@ -16,46 +15,50 @@
     {% endfor %}
   </div>
 {% endfor %}
-
-
   
   <div>
     <div>
       <div>Bundles</div>
       <div class="tab-links-wrapper">
         <div class="tab-links-wrapper-inner">
-          <div class="tab-link" data-for="">a</div>
-          <div class="tab-link" data-for="">b</div>
-          <div class="tab-link" data-for="">c</div>
-          <div class="tab-link" data-for="">d</div>
-          <div class="tab-link" data-for="">e</div>
+          {% for collection in collections %}
+            <div class="tab-link{% if forloop.first %} tab-link-active{% endif %}" data-for="goals-specific-bundles-{{ collection.handle }}">{{ collection.title }}</div>
+          {% endfor %}
         </div>
       </div>
     </div>
   
     <div class="tab-contents-wrapper">
-      <div class="tab-content" data-id="">
-        <!-- Slider main container -->
-        <div class="swiper custom-sepcific-bundles">
-          <!-- Additional required wrapper -->
-          
-          <div>
-            <!-- If we need navigation buttons -->
-            <div class="custom-swiper-button-prev">Prev</div>
-            <div class="custom-swiper-button-next">Next</div>
+      {% for collection in collections %}
+        <div class="tab-content{% if forloop.first %} tab-content-active{% endif %}" data-id="goals-specific-bundles-{{ collection.handle }}">
+          <!-- Slider main container -->
+          <div class="swiper custom-sepcific-bundles">
+            
+            <!-- Additional required wrapper -->
+            <div>
+              <!-- If we need navigation buttons -->
+              <div class="custom-swiper-button-prev">Prev</div>
+              <div class="custom-swiper-button-next">Next</div>
+            </div>
+            
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              {% for product in collection.products limit: 10 %}
+                <div class="swiper-slide">
+                  <div class="product">
+                    <h3>{{ product.title }}</h3>
+                    <a href="{{ product.url }}">
+                      <img src="{{ product.featured_image | image_url: width: 4000  }}"  alt="{{ product.title }}">
+                    </a>
+                    <p>{{ product.price | money }}</p>
+                  </div>
+                </div>
+              {% endfor %}   
+            </div>
+            
           </div>
-          
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>    
-            <div class="swiper-slide">Slide 5</div>    
-          </div>
-          
         </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
