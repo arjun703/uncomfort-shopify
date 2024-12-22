@@ -6,14 +6,14 @@
       <div class="tab-links-wrapper">
         <div class="tab-links-wrapper-inner">
           {% for collection in section.settings.goal_specific_bundles  %}
-            <div class="tab-link{% if forloop.first %} tab-link-active{% endif %}" data-for="goals-specific-bundles-{{ collection.handle }}">{{ collection.title }}</div>
+            <div class="tab-link{% if forloop.first %} tab-link-active{% endif %}" data-links="prev-next-buttons-for-{{ collection.handle }}" data-for="goals-specific-bundles-{{ collection.handle }}">{{ collection.title }}</div>
           {% endfor %}
         </div>
       </div>
       <div>
         {% for collection in section.settings.goal_specific_bundles  %}
           <!-- Additional required wrapper -->
-          <div>
+          <div class="prev-next-buttons{% if forloop.first %} prev-next-buttons-active{% endif %}" data-id="prev-next-buttons-for-{{ collection.handle }}">
             <div>
               View All Bundles
             </div>
