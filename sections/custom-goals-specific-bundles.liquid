@@ -5,7 +5,7 @@
       <div>Bundles</div>
       <div class="tab-links-wrapper">
         <div class="tab-links-wrapper-inner">
-          {% for collection in collections %}
+          {% for collection in section.settings.goal_specific_bundles  %}
             <div class="tab-link{% if forloop.first %} tab-link-active{% endif %}" data-for="goals-specific-bundles-{{ collection.handle }}">{{ collection.title }}</div>
           {% endfor %}
         </div>
@@ -13,7 +13,7 @@
     </div>
   
     <div class="tab-contents-wrapper">
-      {% for collection in collections %}
+      {% for collection in section.settings.goal_specific_bundles %}
         <div class="tab-content{% if forloop.first %} tab-content-active{% endif %}" data-id="goals-specific-bundles-{{ collection.handle }}">
           <!-- Slider main container -->
           <div class="swiper custom-sepcific-bundles">
