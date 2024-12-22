@@ -31,7 +31,9 @@
                 <div class="swiper-slide">
                   <div class="product-card">
                     <a href="{{ product.url }}">
-                      <img src="{{ product.featured_image | image_url: width: 4000  }}"  alt="{{ product.title }}">
+                      <div class="image-wrapper goal-specific-bundle-product">
+                        <img  src="{{ product.featured_image | image_url: width: 4000  }}"  alt="{{ product.title }}">
+                      </div>
                     </a>
                     <h3>{{ product.title }}</h3>
                     <p>{{ product.price | money }}</p>
