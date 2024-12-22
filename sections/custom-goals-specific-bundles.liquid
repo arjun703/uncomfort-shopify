@@ -91,10 +91,10 @@
   Array.from(document.querySelector('.goals-specific-bundles').querySelectorAll('.tab-link')).forEach(tabLink => {
     tabLink.addEventListener('click', () => {
       document.querySelector('.goals-specific-bundles').querySelector('.tab-link-active').classList.toggle('tab-link-active')
-      if(!tabLink.classList.includes('tab-link-active')) tabLink.classList.add('tab-link-active')
+      if(!tabLink.classList.contains('tab-link-active')) tabLink.classList.add('tab-link-active')
       document.querySelector('.goals-specific-bundles').querySelector('.tab-content-active').classList.toggle('tab-content-active')
       const targetTabContent = document.querySelector(`div[data-id="${tabLink.getAttribute('data-for')}"]`)
-      targetTabContent && !targetTabContent.classList.includes('tab-content-active') && targetTabContent.classList.add('tab-content-active')
+      targetTabContent && !targetTabContent.classList.contains('tab-content-active') && targetTabContent.classList.add('tab-content-active')
     })
   })
 </script>
