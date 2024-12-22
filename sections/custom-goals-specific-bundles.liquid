@@ -16,13 +16,13 @@
       {% for collection in section.settings.goal_specific_bundles %}
         <div class="tab-content{% if forloop.first %} tab-content-active{% endif %}" data-id="goals-specific-bundles-{{ collection.handle }}">
           <!-- Slider main container -->
-          <div class="swiper custom-sepcific-bundles">
+          <div class="swiper custom-sepcific-bundles bundle-for-{{ collection.handle }}">
             
             <!-- Additional required wrapper -->
             <div>
               <!-- If we need navigation buttons -->
-              <div class="custom-swiper-button-prev">Prev</div>
-              <div class="custom-swiper-button-next">Next</div>
+              <div class="custom-swiper-button-prev-for-bundle-{{ collection.handle }}">Prev</div>
+              <div class="custom-swiper-button-next-for-bundle-{{ collection.handle }}">Next</div>
             </div>
             
             <div class="swiper-wrapper">
@@ -44,11 +44,60 @@
               {% endfor %}   
             </div>
           </div>
+
+
+            <script>
+              const swiper = new Swiper('.bundle-for-{{ collection.handle }}', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: true,
+              slidesPerView: 1,
+              spaceBetween: 10,
+              // Responsive breakpoints
+              breakpoints: {
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 3,
+                  spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 4,
+                  spaceBetween: 40
+                }
+              },
+            
+              // Navigation arrows
+              navigation: {
+                nextEl: '.custom-swiper-button-next-for-bundle-{{ collection.handle }}',
+                prevEl: '.custom-swiper-button-prev-for-bundle-{{ collection.handle }}',
+              },
+            
+            });
+            </script>
+          
         </div>
       {% endfor %}
     </div>
   </div>
 </div>
+
+<script>
+  Array.from(document.querySelector('.goals-specific-bundles').querySelectorAll('.tab-link')).forEach(tabLink => {
+    tabLink.addEventListener('click', () => {
+      document.querySelector('.goals-specific-bundles').querySelector('.tab-link-active').classList.toggle('tab-link-active')
+      if(!tabLink.classList.includes('.tab-link-active')) tabLink.classList.add('tab-link-active')
+      document.querySelector('.goals-specific-bundles').querySelector('.tab-content-active').classList.toggle('tab-content-active')
+      const targetTabContent = document.querySelector(`div[data-id="${tabLink.getAttribute('data-for')}"]`)
+      targetTabContent && !targetTabContent.classList.includes('.tab-content-active') && targetTabContent.classList.add('tab-content-active')
+    })
+  })
+</script>
 
 <style>
   
@@ -94,40 +143,7 @@
   
 </style>
 
-<script>
-  const swiper = new Swiper('.custom-sepcific-bundles', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 10,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40
-    }
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.custom-swiper-button-next',
-    prevEl: '.custom-swiper-button-prev',
-  },
-
-});
-</script>
 
 
 {% schema %}
