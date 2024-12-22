@@ -10,6 +10,21 @@
           {% endfor %}
         </div>
       </div>
+      <div>
+        {% for collection in section.settings.goal_specific_bundles  %}
+          <!-- Additional required wrapper -->
+          <div>
+            <div>
+              View All Bundles
+            </div>
+            <div>
+              <!-- If we need navigation buttons -->
+              <div class="custom-swiper-button-prev-for-bundle-{{ collection.handle }}">Prev</div>
+              <div class="custom-swiper-button-next-for-bundle-{{ collection.handle }}">Next</div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   
     <div class="tab-contents-wrapper">
@@ -17,13 +32,6 @@
         <div class="tab-content{% if forloop.first %} tab-content-active{% endif %}" data-id="goals-specific-bundles-{{ collection.handle }}">
           <!-- Slider main container -->
           <div class="swiper custom-sepcific-bundles bundle-for-{{ collection.handle }}">
-            
-            <!-- Additional required wrapper -->
-            <div>
-              <!-- If we need navigation buttons -->
-              <div class="custom-swiper-button-prev-for-bundle-{{ collection.handle }}">Prev</div>
-              <div class="custom-swiper-button-next-for-bundle-{{ collection.handle }}">Next</div>
-            </div>
             
             <div class="swiper-wrapper">
               <!-- Slides -->
