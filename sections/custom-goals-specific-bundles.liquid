@@ -31,8 +31,10 @@
                 <div class="swiper-slide">
                   <div class="product-card">
                     <a href="{{ product.url }}">
-                      <div class="image-wrapper goal-specific-bundle-product-image-wrapper">
-                        <img  src="{{ product.featured_image | image_url: width: 4000  }}"  alt="{{ product.title }}">
+                      <div class="image-and-label-wrapper">
+                        <div class="image-wrapper goal-specific-bundle-product-image-wrapper">
+                          <img  src="{{ product.featured_image | image_url: width: 4000  }}"  alt="{{ product.title }}">
+                        </div>
                       </div>
                     </a>
                     <h3>{{ product.title }}</h3>
@@ -52,6 +54,15 @@
   
   .goal-specific-bundle-product-image-wrapper{
     overflow:hidden;
+  }
+
+  .image-and-label-wrapper{
+    padding: 32px;
+  }
+
+  .goal-specific-bundle-product-image-wrapper img{
+    width:100%;
+    height:100%;
   }
   
   .goals-specific-bundles .tab-links-wrapper-inner{
