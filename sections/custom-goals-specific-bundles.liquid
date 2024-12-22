@@ -30,10 +30,10 @@
               {% for product in collection.products limit: 10 %}
                 <div class="swiper-slide">
                   <div class="product">
-                    <h3>{{ product.title }}</h3>
                     <a href="{{ product.url }}">
                       <img src="{{ product.featured_image | image_url: width: 4000  }}"  alt="{{ product.title }}">
                     </a>
+                    <h3>{{ product.title }}</h3>
                     <p>{{ product.price | money }}</p>
                   </div>
                 </div>
