@@ -100,9 +100,16 @@
     tabLink.addEventListener('click', () => {
       document.querySelector('.goals-specific-bundles').querySelector('.tab-link-active').classList.toggle('tab-link-active')
       if(!tabLink.classList.contains('tab-link-active')) tabLink.classList.add('tab-link-active')
+      
       document.querySelector('.goals-specific-bundles').querySelector('.tab-content-active').classList.toggle('tab-content-active')
       const targetTabContent = document.querySelector(`div[data-id="${tabLink.getAttribute('data-for')}"]`)
       targetTabContent && !targetTabContent.classList.contains('tab-content-active') && targetTabContent.classList.add('tab-content-active')
+
+      document.querySelector('.goals-specific-bundles').querySelector('.prev-next-buttons-active').classList.toggle('prev-next-buttons-active')
+      const targetPaginationLinks = document.querySelector(`div[data-id="${tabLink.getAttribute('data-links')}"]`)
+      targetPaginationLinks && !targetPaginationLinks.classList.contains('prev-next-buttons-active') && targetPaginationLinks.classList.add('prev-next-buttons-active')
+
+      
     })
   })
 </script>
