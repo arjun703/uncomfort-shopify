@@ -1,4 +1,24 @@
 <div class="page-width">
+
+
+
+{% for collection in collections %}
+  <h2>{{ collection.title }}</h2>
+  <div class="collection-products">
+    {% for product in collection.products limit: 10 %}
+      <div class="product">
+        <h3>{{ product.title }}</h3>
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | img_url: 'original' }}" alt="{{ product.title }}">
+        </a>
+        <p>{{ product.price | money }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+
+  
   <div>
     <div>
       <div>Bundles</div>
@@ -14,7 +34,7 @@
     </div>
   
     <div class="tab-contents-wrapper">
-      <div class="tab-content" data-tab-link="">
+      <div class="tab-content" data-id="">
         <!-- Slider main container -->
         <div class="swiper custom-sepcific-bundles">
           <!-- Additional required wrapper -->
