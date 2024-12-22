@@ -31,7 +31,7 @@
                 <div class="swiper-slide">
                   <div class="product-card">
                     <a href="{{ product.url }}">
-                      <div class="image-wrapper goal-specific-bundle-product">
+                      <div class="image-wrapper goal-specific-bundle-product-image-wrapper">
                         <img  src="{{ product.featured_image | image_url: width: 4000  }}"  alt="{{ product.title }}">
                       </div>
                     </a>
@@ -49,6 +49,11 @@
 </div>
 
 <style>
+  
+  .goal-specific-bundle-product-image-wrapper{
+    overflow:hidden;
+  }
+  
   .goals-specific-bundles .tab-links-wrapper-inner{
     display:flex;
     gap: 40px;
