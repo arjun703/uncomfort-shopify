@@ -1,20 +1,4 @@
 <div class="page-width">
-
-
-{% for collection in collections %}
-  <h2>{{ collection.title }}</h2>
-  <div class="collection-products">
-    {% for product in collection.products limit: 10 %}
-      <div class="product">
-        <h3>{{ product.title }}</h3>
-        <a href="{{ product.url }}">
-          <img src="{{ product.featured_image | image_url: width: 4000  }}"  alt="{{ product.title }}">
-        </a>
-        <p>{{ product.price | money }}</p>
-      </div>
-    {% endfor %}
-  </div>
-{% endfor %}
   
   <div>
     <div>
